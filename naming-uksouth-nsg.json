@@ -33,3 +33,6 @@
   },
   "parameters": {}
 }
+
+
+// Requires all NSGs to meet the QinetiQ naming conventions as defined in the SD&D document
