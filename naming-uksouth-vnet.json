@@ -1,0 +1,31 @@
+{
+  "mode": "All",
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "field": "location",
+          "equals": "uksouth"
+        },
+        {
+          "not": {
+            "anyOf": [
+              {
+                "field": "name",
+                "like": "qq-h101-azr-vnet-*"
+              },
+              {
+                "field": "name",
+                "match": "qq-h101-azr-vnet???"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "then": {
+      "effect": "deny"
+    }
+  },
+  "parameters": {}
+}
