@@ -4,6 +4,10 @@
     "if": {
       "allOf": [
         {
+          "field": "type",
+          "equals": "Microsoft.Network/networkSecurityGroups"
+        },
+        {
           "field": "location",
           "equals": "uksouth"
         },
@@ -12,11 +16,11 @@
             "anyOf": [
               {
                 "field": "name",
-                "like": "qq-h101-azr-vnet-*"
+                "like": "qq-h101-azr-nsg-*"
               },
               {
                 "field": "name",
-                "match": "qq-h101-azr-vnet???"
+                "match": "qq-h101-azr-nsg???"
               }
             ]
           }
